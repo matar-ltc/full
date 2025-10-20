@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar", dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>properties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) { navbar.classList.add('scrolled'); } else { navbar.classList.remove('scrolled'); }
+        });
+    </script>
+</head>
+<body>
+    <header>
+		<nav class="navbar" id="navbar">
+			<ul>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="properties.html">العقارات</a></li>
+                <li><a href="calculator.html">حاسبة التمويل</a></li>
+			</ul>
+		</nav>		
+    </header>
+    <div class="hero">
+	    <video autoplay loop muted plays-inline class="bg-video">
+			<source src="images/18870816-uhd_3840_2160_60fps.mp4" type="video/mp4">
+		</video>
+        <div class="gradient"></div>
+		<div class="content">
+            <h1>استكشف العقارات</h1>
+            <h3>ابحث عن العقار المثالي من ضمن مجموعتنا المميزة</h3>
+            <div class="controls">
+                <div class="search-filter">
+                    <div class="filter">
+                        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                        <div id="myDropdown" class="dropdown-content right-dropdown">
+                            <a href="#about">About</a>
+                            <a href="#base">Base</a>
+                            <a href="#blog">Blog</a>
+                        </div>
+                        <button onclick="myFunction2()" class="dropbtn">Dropdown</button>
+                        <div id="myDropdown2" class="dropdown-content center-dropdown">
+                            <a href="#about">bout</a>
+                            <a href="#base">bae</a>
+                            <a href="#blog">lob</a>
+                        </div>
+                        <button onclick="myFunction3()" class="dropbtn">Dropdown</button>
+                        <div id="myDropdown3" class="dropdown-content left-dropdown">
+                            <a href="#about">About</a>
+                            <a href="#base">Base</a>
+                            <a href="#blog">Blog</a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
